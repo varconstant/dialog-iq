@@ -66,9 +66,9 @@ export default class BasicAuthentication {
     }
 
     const { data: workspaces } = await api.getSecured().get('/admin/user/workspaces')
-    if (!workspaces || !workspaces.length) {
-      return history.replace('/noAccess')
-    }
+    // if (!workspaces || !workspaces.length) {
+    //   return history.replace('/noAccess')
+    // }
 
     // We set either the active workspace, or the first in the list he's allowed otherwise.
     setActiveWorkspace(getActiveWorkspace() || workspaces[0].workspace)
