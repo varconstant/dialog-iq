@@ -102,7 +102,6 @@ export const getDevBins = async (toolName: string, platform: string, branch: str
 }
 
 
-
 export const getReleasedFiles = async (toolName: string, platform: string): Promise<ProcessedRelease[]> => {
   try {
     const platformMatch = new RegExp(`.*-(${platform.replace('win32', 'win')})-x64`)
