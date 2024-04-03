@@ -257,17 +257,17 @@ export class ConfigProvider {
   public async getBrandingConfig(appName: 'admin' | 'studio' | 'webchat') {
     const defaultConfig = {
       admin: {
-        title: 'Botpress Admin Panel',
+        title: 'DialogIQ Admin Panel',
         favicon: 'assets/admin/ui/public/favicon.ico',
         customCss: ''
       },
       studio: {
-        title: 'Botpress Studio',
+        title: 'DialogIQ Studio',
         favicon: 'assets/studio/ui/public/img/favicon.png',
         customCss: ''
       },
       webchat: {
-        title: 'Botpress Webchat',
+        title: 'DialogIQ Webchat',
         favicon: 'assets/studio/ui/public/img/favicon.png',
         customCss: ''
       }

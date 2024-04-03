@@ -217,7 +217,7 @@ export interface BotpressConfig {
       admin: {
         /**
          * Change the name displayed in the title bar on the admin panel
-         * @example "Botpress Admin Panel"
+         * @example "DialogIQ Admin Panel"
          */
         title?: string
         /**

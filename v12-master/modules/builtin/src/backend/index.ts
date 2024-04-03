@@ -17,7 +17,7 @@ const entryPoint: sdk.ModuleEntryPoint = {
   definition: {
     name: 'builtin',
     menuIcon: 'fiber_smart_record',
-    fullName: 'Botpress Builtins',
+    fullName: 'DialogIQ Builtins',
     homepage: 'https://botpress.com',
     noInterface: true
   }

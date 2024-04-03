@@ -73,12 +73,17 @@
 .card_body {
   -webkit-flex: 1 1 auto;
   flex: 1 1 auto;
-  padding: 1.25rem;
+  padding: 2.25rem;
   font-size: 14px;
+  form {
+    .bp3-form-group {
+      margin: 0px 0px 30px;
+    }
+  }
 }
 
 .card_title {
-  margin-bottom: 0.75rem;
+  margin-bottom: 1.75rem;
   font: 22px Arial;
 }
 

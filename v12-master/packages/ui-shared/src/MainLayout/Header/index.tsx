@@ -19,7 +19,7 @@ const Header: FC<HeaderProps> = ({ children, rightButtons, leftButtons }) => {
                   {divider && <span className={style.divider}></span>}
                   <ToolTip content={tooltip}>
                     <button className={cx(style.item, style.itemSpacing)} onClick={onClick}>
-                      <Icon color="#1a1e22" icon={icon as IconName} iconSize={16} />
+                      <Icon color="#bf3f3f" icon={icon as IconName} iconSize={16} />
                       {label && <span className={style.label}>{label}</span>}
                     </button>
                   </ToolTip>
@@ -38,7 +38,7 @@ const Header: FC<HeaderProps> = ({ children, rightButtons, leftButtons }) => {
                     element
                   ) : (
                     <button className={cx(style.item, style.itemSpacing)} onClick={onClick}>
-                      <Icon color="#1a1e22" icon={icon as IconName} iconSize={16} />
+                      <Icon color="#bf3f3f" icon={icon as IconName} iconSize={16} />
                       {label && <span className={style.label}>{label}</span>}
                     </button>
                   )}

@@ -7,6 +7,7 @@ interface CssExports {
   '_2': string;
   '_3': string;
   '_4': string;
+  'bp3-form-group': string;
   'card': string;
   'card_body': string;
   'card_text': string;
