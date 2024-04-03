@@ -146,19 +146,19 @@ const Menu: FC<Props> = props => {
           isPro={true}
         />
 
-        {/* <MenuItem
+        <MenuItem
           id="btn-menu-logs"
           text={lang.tr('admin.sideMenu.logs')}
           icon="manual"
           url="/workspace/:workspaceId?/logs"
           resource="admin.logs"
           operation="read"
-        /> */}
+        />
 
         {/* {renderWorkspaceApps()} */}
 
-        {/* <AccessControl superAdmin={true}>
-          <MenuItem
+        <AccessControl superAdmin={true}>
+          {/* <MenuItem
             id="btn-menu-version"
             text={lang.tr('admin.sideMenu.sourceControl')}
             icon="changes"
@@ -171,37 +171,37 @@ const Menu: FC<Props> = props => {
               icon={<MdCopyright />}
               url="/server/license"
             />
-          )}
-          <MenuItem
+          )} */}
+          {/* <MenuItem
             text={lang.tr('admin.sideMenu.languages')}
             id="btn-menu-language"
             icon="globe-network"
             url="/server/languages"
-          />
+          /> */}
           <MenuItem text={lang.tr('sideMenu.modules')} id="btn-menu-modules" icon="control" url="/modules" />
-          <MenuItem
+          {/* <MenuItem
             text={lang.tr('admin.sideMenu.productionChecklist')}
             id="btn-menu-checklist"
             icon="endorsed"
             url="/checklist"
-          />
-          {props?.licensing?.isPro && (
+          /> */}
+          {/* {props?.licensing?.isPro && (
             <MenuItem
               id="btn-menu-monitoring"
               text={lang.tr('admin.sideMenu.monitoring')}
               icon="timeline-line-chart"
               url="/server/monitoring"
             />
-          )}
-          {props?.licensing?.isPro && (
+          )} */}
+          {/* {props?.licensing?.isPro && (
             <MenuItem
               id="btn-menu-alerting"
               text={lang.tr('admin.sideMenu.alerting')}
               icon="notifications"
               url="/server/alerting"
             />
-          )}
-        </AccessControl> */}
+          )} */}
+        </AccessControl>
         {/* <MenuItem
           text={lang.tr('admin.sideMenu.latestReleases')}
           id="btn-menu-releases"

@@ -32,8 +32,8 @@ const Header: FC<Props> = props => {
         </Navbar.Group>
         <Navbar.Group align={Alignment.RIGHT}>
           <WorkspaceSelect />
-          <Navbar.Divider />
-          <HelpMenu />
+          {/* <Navbar.Divider /> */}
+          {/* <HelpMenu /> */}
           {/* <Navbar.Divider />
           <AccessControl resource="admin.logs" operation="read">
             <Tooltip content={<div className={style.tooltip}>{lang.tr('bottomPanel.label')}</div>}>

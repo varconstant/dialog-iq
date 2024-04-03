@@ -3,7 +3,7 @@ import { lang } from 'botpress/shared'
 import cx from 'classnames'
 import React, { FC } from 'react'
 
-import logo from './media/favicon.png'
+import logo from './media/logo_grey.png'
 import style from './style.scss'
 
 interface Props {
@@ -25,7 +25,7 @@ const LoginContainer: FC<Props> = props => {
             <div className={cx('card_body', 'login_box', style.card_body, style.login_box)}>
               <div>
                 <div className={cx('card_title', style.card_title)}>
-                  <strong>{props.title || 'Botpress'}</strong>
+                  <strong>{props.title || 'DialogIQ'}</strong>
                 </div>
 
                 <div className={cx('card_text', style.card_text)}>{props.subtitle || ''}</div>
