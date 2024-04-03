@@ -5,8 +5,10 @@
   font-size: 10px;
 
   &:global(.bp3-intent-primary) {
-    background-color: var(--hover-ocean);
+    background-color: #d91b2a;
     color: var(--ocean);
+    padding: 12px;
+    border-radius: 10px;
   }
   &:global(.bp3-intent-warning) {
     background-color: var(--hover-lighthouse-30);

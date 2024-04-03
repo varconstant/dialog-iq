@@ -18,8 +18,9 @@ const LoginContainer: FC<Props> = props => {
   return (
     <div className={cx('centered-container', style.centered_container)}>
       <div className={cx('middle', style.middle)}>
+        <div className='bg-image-login'><img className={cx('logo', style.logo)} src={logo} alt="loading" /></div>
         <div className={cx('inner', style.inner)}>
-          <img className={cx('logo', style.logo)} src={logo} alt="loading" />
+          {/* <img className={cx('logo', style.logo)} src={logo} alt="loading" /> */}
           <div className={cx('card', 'card_body', style.card, style.card_body)}>
             <div className={cx('card_body', 'login_box', style.card_body, style.login_box)}>
               <div>

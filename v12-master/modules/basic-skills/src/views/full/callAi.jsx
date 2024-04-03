@@ -32,17 +32,17 @@ const headersPlaceholder = stringify({
   'X-Custom-Headers': '<value>'
 })
 
-export class CallAI extends React.Component {
+export class AI extends React.Component {
   state = {
-    selectedMethod: methodOptions[0],
+    selectedMethod: methodOptions[1],
     selectedMemory: memoryOptions[0],
     variable: 'response',
     body: undefined,
     randomId: nanoid('abcdefghijklmnopqrstuvwxyz0123456789', 10),
     headers: JSON.stringify({
-      "Content-Type": "application/json"
-  }),
-    url: 'http://10.13.102.11:8096/callback-receiver',
+      "Content-Type":"text/plain"
+    }),
+    url: 'http://10.155.133.9:8080/process_query',
     invalidJson: false
   }
 

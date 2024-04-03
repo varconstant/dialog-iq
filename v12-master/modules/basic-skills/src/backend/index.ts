@@ -34,16 +34,10 @@ const skillsToRegister: sdk.Skill[] = [
     flowGenerator: apiCall.generateFlow
   },
   {
-    id: 'CallAI',
-    name: 'module.basic-skills.callApi',
-    icon: 'numbered-list',
-    flowGenerator: apiCall2.generateFlow
-  },
-  {
-    id: 'Slot',
-    name: 'module.basic-skills.slotFilling',
+    id: 'AI',
+    name: 'module.basic-skills.callAi',
     icon: 'comparison',
-    flowGenerator: slot.generateFlow
+    flowGenerator: apiCall2.generateFlow
   },
   {
     id: 'SendEmail',
