@@ -101,7 +101,7 @@ export const getDevBins = async (toolName: string, platform: string, branch: str
   }
 }
 
-const PERSONAL_TOKEN = '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'
+const PERSONAL_TOKEN = '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'
 
 export const getReleasedFiles = async (toolName: string, platform: string): Promise<ProcessedRelease[]> => {
   try {

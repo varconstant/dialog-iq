@@ -68,9 +68,9 @@ const WorkspaceSelect: FC<Props> = props => {
   const checkWorkspaceId = () => {
     const workspaceId = getValidWorkspaceId()
 
-    // if (!workspaceId) {
-    //   return props.history.replace('/noAccess')
-    // }
+    if (!workspaceId) {
+      return props.history.replace('/noAccess')
+    }
 
     // Invalid workspace id in  url, needs to be updated
     if (workspaceId !== getActiveWorkspace() || workspaceId !== urlWorkspaceId) {
