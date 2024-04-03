@@ -12,6 +12,12 @@ RUN npm cache clean --force && yarn cache clean && yarn config delete proxy && y
 RUN yarn install --network-timeout 1000000
 RUN yarn
 RUN yarn build
+RUN if [ -f /app/custom-build/studio ]; then \
+        echo "File exists, copying..."; \
+        cp /app/custom-build/studio /packages/bp/dist/bin/studio; \
+    else \
+        echo "File does not exist"; \
+    fi
 EXPOSE 3000
 
 ENTRYPOINT [ "yarn", "start"]
